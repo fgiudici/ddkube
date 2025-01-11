@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: ddkube
 repo: github.com/fgiudici/ddkube
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: foggy.day
+  group: ddkube
+  kind: Hostname
+  path: github.com/fgiudici/ddkube/api/v1beta1
+  version: v1beta1
 version: "3"
